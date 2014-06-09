@@ -22,7 +22,7 @@ def main():
             blanks = [letter if letter == guess else blank for blank, letter in zip(blanks, word)]
         else:
             guesses.append(guess)
-        
+        """when len == max wrong guesses you've lost"""
         if len(guesses) == max_wrong_guesses:
             image(len(guesses))
             print 'you lose!'
