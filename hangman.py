@@ -23,7 +23,7 @@ def main():
         else:
             guesses.append(guess)
         
-        if len(guesses) > max_wrong_guesses:
+        if len(guesses) == max_wrong_guesses:
             image(len(guesses))
             print 'you lose!'
             return
