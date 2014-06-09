@@ -17,7 +17,7 @@ def main():
     while True:
         image(len(guesses))
         print blanks
-        guess = raw_input('guess')
+        guess = raw_input('guess a letter: ')
         if guess in word:
             blanks = [letter if letter == guess else blank for blank, letter in zip(blanks, word)]
         else:
